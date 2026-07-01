@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanessa Lecocq – Psychologue clinicienne à Herblay-sur-Seine</title>
+  <meta name="description" content="Vanessa Lecocq, psychologue clinicienne à Herblay-sur-Seine : accompagnement des adultes, adolescents, aidants et personnes en situation de handicap. Informations pratiques, tarifs et dispositif Mon Soutien Psy." />
+  <meta property="og:title" content="Vanessa Lecocq – Psychologue clinicienne à Herblay-sur-Seine" />
+  <meta property="og:description" content="Psychothérapie de soutien, adolescents, aidants, handicap, repérage cognitif, Doctolib et Mon Soutien Psy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/cabinet-1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.55rem);
+      --text-xl: clamp(1.55rem, 1.2rem + 1.25vw, 2.4rem);
+      --text-2xl: clamp(2.2rem, 1.3rem + 3vw, 4.7rem);
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg:#f6f1ec; --color-surface:#fcf9f6; --color-surface-2:#fffdfb; --color-surface-offset:#efe4da; --color-surface-dynamic:#e3d3c4;
+      --color-border:#d9c8ba; --color-divider:#e8dad0; --color-text:#2f2621; --color-text-muted:#6b5e56; --color-text-faint:#9d8e82; --color-text-inverse:#fffaf7;
+      --color-primary:#b34f43; --color-primary-hover:#943c31; --color-primary-active:#7e3026; --color-primary-highlight:#f2dad4;
+      --color-secondary:#9f7a60; --color-accent:#617d67;
+      --radius-sm:.375rem; --radius-md:.75rem; --radius-lg:1rem; --radius-xl:1.5rem; --radius-full:9999px;
+      --shadow-sm:0 1px 2px rgba(52,35,25,.06); --shadow-md:0 14px 34px rgba(52,35,25,.10); --shadow-lg:0 26px 64px rgba(52,35,25,.14);
+      --font-display:'Cormorant Garamond', Georgia, serif; --font-body:'Work Sans','Helvetica Neue',sans-serif;
+      --content:1160px; --transition:180ms cubic-bezier(.16,1,.3,1);
+    }
+    [data-theme="dark"] {
+      --color-bg:#1e1815; --color-surface:#261f1b; --color-surface-2:#2c241f; --color-surface-offset:#322924; --color-surface-dynamic:#43362f;
+      --color-border:#53453d; --color-divider:#3f332c; --color-text:#f2e8e2; --color-text-muted:#cdbeb3; --color-text-faint:#9b897d; --color-text-inverse:#1f1815;
+      --color-primary:#dc7d68; --color-primary-hover:#ee927d; --color-primary-active:#f3ab9a; --color-primary-highlight:#492f29; --color-secondary:#d3b295; --color-accent:#8bb090;
+      --shadow-sm:0 2px 6px rgba(0,0,0,.25); --shadow-md:0 14px 34px rgba(0,0,0,.36); --shadow-lg:0 26px 64px rgba(0,0,0,.46);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:none;text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:5rem}
+    body{min-height:100dvh;line-height:1.65;font-family:var(--font-body);font-size:var(--text-base);background:var(--color-bg);color:var(--color-text)}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{text-decoration:none;color:inherit}
+    button{background:none;border:none;cursor:pointer}
+    a,button{transition:color var(--transition),background var(--transition),border-color var(--transition),box-shadow var(--transition),transform var(--transition)}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    .skip-link{position:absolute;top:-3rem;left:1rem;background:var(--color-text);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-md);z-index:200}
+    .skip-link:focus{top:1rem}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .section{padding-block:clamp(var(--space-12),7vw,var(--space-24))}
+    .eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--color-text-muted)}
+    .eyebrow::before{content:"";width:2rem;height:1px;background:var(--color-primary)}
+    .section-title{font-family:var(--font-display);font-size:var(--text-xl);font-weight:600;line-height:1.02;margin-top:var(--space-4);margin-bottom:var(--space-4)}
+    .muted{color:var(--color-text-muted)}
+    .header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--color-bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid color-mix(in srgb,var(--color-text) 10%,transparent)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3)}
+    .brand svg{width:44px;height:44px;color:var(--color-primary)}
+    .brand strong{display:block;font-size:var(--text-sm)}
+    .brand span{display:block;font-size:var(--text-xs);color:var(--color-text-muted)}
+    .links{display:flex;gap:var(--space-5);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .links a:hover{color:var(--color-text)}
+    .actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle,.icon-btn{width:44px;height:44px;border-radius:999px;display:grid;place-items:center;background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%,transparent)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:0 1.1rem;border-radius:999px;font-size:var(--text-sm);font-weight:500}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse);box-shadow:var(--shadow-sm)}
+    .btn-primary:hover{background:var(--color-primary-hover);transform:translateY(-1px)}
+    .btn-secondary{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%,transparent)}
+    .hero{padding-top:clamp(var(--space-12),7vw,var(--space-20));padding-bottom:var(--space-16)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(var(--space-8),5vw,var(--space-16));align-items:center}
+    .hero h1{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:600;line-height:.94;max-width:10.5ch}
+    .hero p{max-width:58ch;color:var(--color-text-muted);margin-top:var(--space-5)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+    .hero-card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 9%,transparent);border-radius:calc(var(--radius-xl) + .25rem);padding:var(--space-4);box-shadow:var(--shadow-lg)}
+    .hero-photo{position:relative;overflow:hidden;border-radius:calc(var(--radius-xl) - .25rem);aspect-ratio:5/4;background:var(--color-surface-offset)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover}
+    .hero-card-note{position:absolute;left:var(--space-4);bottom:var(--space-4);max-width:18rem;background:color-mix(in srgb,var(--color-surface) 88%,transparent);backdrop-filter:blur(10px);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-4)}
+    .hero-card-note strong{display:block;font-size:var(--text-sm)}
+    .hero-card-note span{font-size:var(--text-xs);color:var(--color-text-muted)}
+    .overview{margin-top:var(--space-8);display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-4)}
+    .panel{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);border-radius:var(--radius-xl);padding:var(--space-6);box-shadow:var(--shadow-sm)}
+    .panel h2,.panel h3{font-family:var(--font-display);font-size:var(--text-lg);font-weight:600;line-height:1.08;margin-bottom:var(--space-3)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);margin-top:var(--space-5)}
+    .stat{padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-surface-2);border:1px solid color-mix(in srgb,var(--color-text) 7%,transparent)}
+    .stat strong{display:block;font-family:var(--font-display);font-size:var(--text-xl);line-height:1;color:var(--color-primary)}
+    .stat span{font-size:var(--text-xs);color:var(--color-text-muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+    .chip{display:inline-flex;padding:.45rem .85rem;border-radius:999px;background:var(--color-primary-highlight);color:var(--color-primary-active);font-size:var(--text-xs)}
+    .profile-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-8);align-items:start}
+    .profile-copy{display:grid;gap:var(--space-5)}
+    .profile-copy p{margin:0}
+    .profile-points{display:grid;gap:var(--space-4);margin-top:var(--space-2)}
+    .profile-point{padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-surface-2);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+    .profile-point strong{display:block;margin-bottom:var(--space-2);font-size:var(--text-sm)}
+    .profile-photo-card{position:sticky;top:6rem;display:grid;gap:var(--space-4)}
+    .profile-photo-frame{overflow:hidden;border-radius:calc(var(--radius-xl) + .25rem);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);box-shadow:var(--shadow-md)}
+    .profile-photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover}
+    .profile-photo-caption{padding:var(--space-4);background:var(--color-surface)}
+    .profile-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-2)}
+    .grid-2{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--space-8)}
+    .cards{display:grid;gap:var(--space-4)}
+    .card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);border-radius:var(--radius-xl);padding:var(--space-6);box-shadow:var(--shadow-sm)}
+    .card h3{font-size:var(--text-lg);line-height:1.15;margin-bottom:var(--space-3)}
+    .card p{color:var(--color-text-muted)}
+    .card ul{list-style:none;display:grid;gap:var(--space-2);margin-top:var(--space-4)}
+    .card li{display:flex;gap:var(--space-3);color:var(--color-text-muted)}
+    .card li::before{content:"";width:10px;height:10px;border-radius:999px;background:var(--color-primary);margin-top:.5rem;flex:0 0 auto}
+    .sticky{position:sticky;top:6.5rem;height:fit-content}
+    .adult-highlight{background:linear-gradient(135deg,var(--color-surface),var(--color-surface-offset));padding:var(--space-6);border-radius:var(--radius-xl);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);box-shadow:var(--shadow-md)}
+    .adult-highlight ul{list-style:none;display:grid;gap:var(--space-3);margin-top:var(--space-4)}
+    .adult-highlight li{padding-bottom:var(--space-3);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);color:var(--color-text-muted)}
+    .adult-section{background:var(--color-surface);border-block:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+    .quote{background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-8);border-radius:var(--radius-xl);box-shadow:var(--shadow-md)}
+    .quote p{font-family:var(--font-display);font-size:var(--text-xl);line-height:1.05;max-width:16ch}
+    .quote span{display:block;margin-top:var(--space-4);font-size:var(--text-sm);opacity:.82}
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}
+    .pricing-card{padding:var(--space-6);border-radius:var(--radius-xl);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);box-shadow:var(--shadow-sm)}
+    .pricing-card.featured{background:linear-gradient(180deg,var(--color-surface),var(--color-primary-highlight));border-color:color-mix(in srgb,var(--color-primary) 28%,transparent)}
+    .pricing-card h3{font-size:var(--text-lg);margin-bottom:var(--space-2)}
+    .price{font-family:var(--font-display);font-size:clamp(2rem,1.6rem + 1vw,3rem);line-height:1;color:var(--color-primary);margin:var(--space-4) 0}
+    .pricing-card ul{list-style:none;display:grid;gap:var(--space-2)}
+    .pricing-card li{color:var(--color-text-muted)}
+    .pricing-card li::before{content:"— ";color:var(--color-primary)}
+    .msp-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);align-items:start}
+    .note{padding:var(--space-5);border-radius:var(--radius-lg);background:color-mix(in srgb,var(--color-accent) 10%,var(--color-surface));border:1px solid color-mix(in srgb,var(--color-accent) 16%,transparent)}
+.gallery-note{grid-column:1 / -1}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:var(--space-4)}
+    .gallery-card{overflow:hidden;border-radius:var(--radius-xl);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);box-shadow:var(--shadow-sm)}
+    .gallery-card img{width:100%;height:100%;object-fit:cover}
+    .gallery-card.large{grid-row:span 2;min-height:34rem}
+    .gallery-card.medium{min-height:16rem}
+    .gallery-card.small{min-height:16rem}
+    .gallery-caption{padding:var(--space-4);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .environment-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+    .environment-card{overflow:hidden;border-radius:var(--radius-xl);border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);background:var(--color-surface);box-shadow:var(--shadow-sm)}
+    .environment-card img{aspect-ratio:16/10;width:100%;object-fit:cover}
+    .environment-card div{padding:var(--space-4)}
+    .cta-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--space-6);padding:clamp(var(--space-6),5vw,var(--space-12));border-radius:calc(var(--radius-xl) + .5rem);background:linear-gradient(135deg,var(--color-surface),var(--color-surface-offset));border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);box-shadow:var(--shadow-lg)}
+    .contact-list{list-style:none;display:grid;gap:var(--space-3)}
+    .contact-list li{display:flex;justify-content:space-between;gap:var(--space-3);padding-bottom:var(--space-3);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}.access-map-section{padding-top:0;padding-bottom:clamp(var(--space-12),6vw,var(--space-20))}.access-map-card{background:linear-gradient(135deg,var(--color-surface),var(--color-surface-offset));border:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);border-radius:calc(var(--radius-xl) + .5rem);overflow:hidden;box-shadow:var(--shadow-md)}.map-title{padding:var(--space-6) var(--space-6) var(--space-4)}.map-title h3{font-family:var(--font-display);font-size:var(--text-lg);line-height:1.08;margin-bottom:var(--space-3)}.map-title p{color:var(--color-text-muted);max-width:62ch}.map-frame-wrap{padding:0 var(--space-6) var(--space-6)}.map-frame-wrap iframe{display:block;width:100%;height:420px;border:0;border-radius:var(--radius-xl);background:var(--color-surface-2)}.map-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);padding:0 var(--space-6) var(--space-6)}
+    .contact-list span{color:var(--color-text-muted)}
+    .footer{padding:var(--space-8) 0;border-top:1px solid color-mix(in srgb,var(--color-text) 8%,transparent);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.is-visible{opacity:1;transform:none}
+    @media (max-width: 1024px){.hero-grid,.overview,.profile-layout,.grid-2,.msp-grid,.gallery-grid,.environment-grid,.cta-wrap{grid-template-columns:1fr}.sticky,.profile-photo-card{position:static}.gallery-card.large,.gallery-card.medium,.gallery-card.small{min-height:20rem;grid-row:auto}.pricing-grid{grid-template-columns:1fr 1fr}}
+    @media (max-width: 760px){.nav{flex-wrap:wrap}.links{order:3;width:100%;overflow:auto;padding-bottom:.25rem}.actions{width:100%;justify-content:space-between}.hero h1{max-width:12ch}.stats,.pricing-grid{grid-template-columns:1fr}.hero-actions{width:100%}.gallery-note{grid-column:1 / -1!important;max-width:none;margin-top:var(--space-4)}.map-title,.map-frame-wrap,.map-actions{padding-left:var(--space-4);padding-right:var(--space-4)}.map-frame-wrap iframe{height:320px}}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="header">
+    <div class="container nav">
+      <a href="#accueil" class="brand" aria-label="Accueil Vanessa Lecocq">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M32 8c11 0 20 9.2 20 20.4 0 12.7-13.8 23.7-20 27.6-6.2-3.9-20-14.9-20-27.6C12 17.2 21 8 32 8Z" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M22 30c3.4-5.5 7.4-8.2 10.2-8.2 4.1 0 7.7 3.7 9.8 10.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="31.8" cy="29.5" r="2.7" fill="currentColor"/>
+        </svg>
+        <div>
+          <strong>Vanessa Lecocq</strong>
+          <span>Psychologue clinicienne · Herblay-sur-Seine</span>
+        </div>
+      </a>
+      <nav class="links" aria-label="Navigation principale">
+        <a href="#profil">Profil</a>
+        <a href="#adultes">Adultes</a>
+        <a href="#adolescents">Adolescents</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#cabinet">Cabinet</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Changer de thème">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-primary" href="https://www.doctolib.fr/psychologue/herblay-sur-seine/vanessa-lecocq" target="_blank" rel="noopener noreferrer">Prise de rendez-vous</a>
+      </div>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Psychologue clinicienne</span>
+          <h1>Un espace thérapeutique pour adolescents,&nbsp;adultes,  aidants et personnes vulnérables.</h1>
+<p>Je propose un accompagnement psychologique à Herblay-sur-Seine dans un cabinet lumineux, au sein d’un environnement pluridisciplinaire. Ma pratique s’appuie sur une solide expérience en structures médico-sociales, en neuropsychologie et dans l’accompagnement de différents publics pour proposer un suivi ajusté aux difficultés psychiques, émotionnelles ou relationnelles pouvant survenir à différents moments de la vie.</p>
+        </div>
+        <div class="hero-card reveal">
+          <div class="hero-photo">
+            <img src=".\689008348_10237271495678335_2602157178355143631_n.jpg" alt="Cabinet de consultation avec mur terracotta, mobilier en bois clair et fauteuils chaleureux" width="768" height="1024" loading="eager" />
+            <div class="hero-card-note">
+              <strong>Cabinet à Herblay-sur-Seine</strong>
+              <span>Cadre apaisant, lumineux et accessible.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container overview">
+        <article class="panel reveal">
+          <h2>Une pratique clinique ancrée dans le réel</h2>
+          <p>Psychologue clinicienne   et psychothérapeute, je propose un accompagnement des adolescents et des adultes fondé sur l’écoute, le respect et la confidentialité.&nbsp;</p>
+          <p>Ma pratique s’appuie sur une évaluation psychologique rigoureuse et sur un suivi personnalisé, construit avec chaque personne en fonction de ses besoins, de ses ressources et de son histoire.&nbsp;</p>
+          <p>Formée à différentes approches (thérapies cognitivo‑comportementales, systémie, relaxation), ainsi qu’aux soins relationnels et palliatifs, j’articule ces outils de manière souple pour offrir un cadre à la fois contenant, structuré et ajusté à chaque situation.&nbsp;</p>
+          <p>J’accorde une importance particulière à la qualité de la relation thérapeutique, à la prise en compte du rythme de chacun et à la co‑construction des objectifs, afin de favoriser un travail psychique en profondeur dans un environnement sécurisant et bienveillant.</p>
+<div class="stats">
+          <div class="stat"><strong>20</strong><span>années d’expérience dans différentes institutions médico-sociales.</span></div>
+          <div class="stat"><strong>4</strong><span>dimensions  : évaluation, suivi, orientation, conseil&nbsp;</span></div>
+          <div class="stat"><strong>1</strong><span>cadre thérapeutique clair, ajusté à chacun et sécurisant</span></div>
+          </div>
+        </article>
+        <aside class="panel reveal">
+          <h3>Publics accueillis</h3>
+          <p class="muted">Consultations pour adultes, adolescents, personnes âgées, proches aidants et personnes en situation de handicap.</p>
+          <div class="chips" style="margin-top:1rem">
+            <span class="chip">Soutien psychologique</span>
+            <span class="chip">Aidants familiaux</span>
+            <span class="chip">Neuropsychologie</span>
+            <span class="chip">Consultation mémoire</span>
+            <span class="chip">Adolescents</span>
+			<span class="chip">Bilan cognitif</span>
+			<span class="chip">Bilan de mémoire</span>
+			<span class="chip">Thérapie cognitive et comportementale (TCC)</span>
+			<span class="chip">Thérapie troubles anxieux (Troubles anxieux)</span> 
+			<span class="chip">Guidance parentale</span> 
+			<span class="chip">Accompagnement psychologique du deuil</span>
+			<span class="chip">Thérapie troubles dépressifs (Troubles dépressifs)</span>
+			<span class="chip">Psychologie de la personne âgée</span>
+			<span class="chip">Accompagnement psychologique du burn out</span>
+			<span class="chip">Psychologie de l'adulte</span>
+			<span class="chip">Aide aux aidants</span>
+			
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="profil">
+      <div class="container profile-layout">
+        <article class="panel reveal profile-copy">
+          <div>
+            <span class="eyebrow">Profil</span>
+            <h2 class="section-title">Qui suis-je ?</h2>
+          </div>
+
+          <p>Psychologue clinicienne  et psychothérapeute, j'exerce depuis plus de vingt ans dans le champ médico-social. Mon parcours s’est construit auprès de publics variés : adultes, adolescents, personnes âgées, personnes en situation de handicap et proches aidants.</p>
+
+          <p>Mon approche clinique s’est nourrie d’un travail de terrain au long cours, au contact de réalités humaines diverses : souffrance psychique, perte d’autonomie, épuisement des aidants, troubles cognitifs, vulnérabilités psychiques et accompagnement des familles. Cette expérience me permet aujourd’hui de proposer au cabinet un cadre à la fois rigoureux, accessible et profondément humain.</p>
+
+          <div class="profile-points">
+            <div class="profile-point">
+              <strong>Une pratique institutionnelle solide</strong>
+              <p>Depuis 2021, j'exerce à l’ESAT des Bellevues au sein d’APF France Handicap, à Herblay, où&nbsp; j'accompagne des personnes en situation de handicap dans leur parcours psychologique et dans le déploiement de leur potentialité.</p>
+            </div>
+
+            <div class="profile-point">
+              <strong>Une expertise en neuropsychologie et accompagnement du handicap</strong>
+              <p>Au Centre de vie PasseR’aile, je mène depuis 2015 un travail auprès de résidents en situation de handicap moteur cérébral, avec évaluations neuropsychologiques, et stimulation cognitive.&nbsp;Ce travail s’inscrit dans une démarche attentive à leurs ressources, visant à soutenir leur évolution, valoriser leur potentiel et les aider à mobiliser le meilleur d’eux-mêmes.</p>
+            </div>
+
+            <div class="profile-point">
+              <strong>Un engagement durable auprès des aidants et du vieillissement</strong>
+              <p>J'interviens également depuis 2011 pour l’Association France Alzheimer, autour de groupes de parole, rendez-vous individuels et formations destinées aux aidants. J'ai aussi exercé plus de treize ans en EHPAD et en accueil de jour pour construire des programmes de stimulation cognitive et proposer un accompagnement psychologique auprès des résidents, des familles mais aussi des formations aux équipes soignantes.</p>
+            </div>
+
+            <div class="profile-point">
+              <strong>Des bases cliniques solides, un appui en formation et conseils</strong>
+              <p>Mes premières expériences se sont construites en CMP, CMPP et psychiatrie adulte, au travers des entretiens cliniques et l’animation de groupes thérapeutiques d'enfants et d'adolescents et de guidance parentale.</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="profile-photo-card reveal">
+          <div class="profile-photo-frame">
+            <img src="./_O6A1867.JPG" alt="Portrait de Vanessa Lecocq" width="1200" height="1500" loading="lazy" />
+            <div class="profile-photo-caption">
+              <strong>Vanessa Lecocq</strong>
+              <p class="muted">Psychologue clinicienne et psychothérapeute, je vous accueille au sein d'un cabinet pluridisciplinaire à Herblay-sur-Seine.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+	  
+    <section class="section adult-section" id="adultes">
+      <div class="container grid-2">
+        <div>
+          <span class="eyebrow">Adultes</span>
+          <h2 class="section-title">Adultes : accompagner les moments de crise et de fragilité</h2>
+          <div class="cards">
+            <article class="card reveal">
+              <h3>Psychothérapie de soutien et accompagnement psychologique</h3>
+              <p>Les consultations s’adressent aux adultes traversant une période de souffrance, de transition ou de perte de repères : anxiété, baisse de moral, épuisement, difficultés relationnelles, deuil, maladie, séparation, surcharge mentale ou sentiment d’isolement.</p>
+              <ul>
+                <li>Mettre des mots sur ce qui fait souffrance et clarifier la demande.</li>
+                <li>Retrouver des points d’appui dans un moment de crise ou de réorganisation.</li>
+                <li>Avancer à un rythme ajusté, avec un cadre stable et contenant.</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Aidants, handicap et vulnérabilités psychiques</h3>
+              <p>Une place particulière est donnée aux proches accompagnant une personne malade, âgée ou en situation de handicap, ainsi qu’aux adultes vivant eux-mêmes une situation de vulnérabilité durable.</p>
+              <ul>
+                <li>Épuisement d’aidant, culpabilité, conflits familiaux, fatigue morale.</li>
+                <li>Besoin d’écoute dans les trajectoires marquées par la dépendance ou la perte d’autonomie.</li>
+                <li>Appui clinique nourri par l’expérience institutionnelle et pluridisciplinaire.</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Evaluation cognitive et orientation mémoire</h3>
+              <p>Des tests exploratoires peuvent être proposés lorsque des difficultés de mémoire, d’attention ou d’organisation apparaissent. Ils ne remplacent pas un bilan complet mais permettent d’affiner le besoin et, si nécessaire, d’orienter vers une consultation mémoire.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="sticky">
+          <div class="adult-highlight reveal">
+            <span class="eyebrow">Approche</span>
+            <h3 style="font-family:var(--font-display);font-size:var(--text-lg);line-height:1.08;margin-top:1rem">Une pratique à la fois clinique, pédagogique et accessible</h3>
+            <p class="muted" style="margin-top:1rem">Le travail thérapeutique s’appuie sur différents outils de formation : TCC, systémie, coaching, relaxation, neuropsychologie et approche relationnelle.</p>
+            <ul>
+              <li>Cadre bienveillant, sécurisant et respectueux du rythme de chacun.</li>
+              <li>Attention particulière aux situations complexes et aux parcours de vie fragilisés.</li>
+              <li>Possibilité d’orientation vers d’autres professionnels si cela s’avère plus adapté.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="adolescents">
+      <div class="container grid-2">
+        <div>
+          <span class="eyebrow">Adolescents</span>
+          <h2 class="section-title">Faire de la santé mentale des adolescents une priorité</h2>
+          <article class="card reveal">
+			  <p>L’adolescence est une période de grande vulnérabilité psychique, marquée par de nombreux changements (scolaires, corporels, relationnels, numériques) qui peuvent faire émerger ou amplifier un mal‑être. Celui‑ci peut notamment se manifester par :&nbsp;</p>
+	  	  <li>Anxiété</li>
+		  	<li>Irritabilité</li>
+		  	<li>Repli sur soi</li>
+		  	<li>Troubles du sommeil</li>
+			<li>Fatigue</li>
+			<li>Difficultés de concentration</li>
+			<li>Pression scolaire importante</li>
+			<li>Harcèlement</li>
+			<li>Hypersensibilité</li>
+			<li>Mésestime de soi</li>
+			<li>Inquiétudes autour de l’avenir</li>
+			<li>Conduites à risque</li>
+		  	<li>Idées noires</li>
+          <p class="muted" style="margin-top:1rem">Les consultations visent à offrir aux adolescents un espace confidentiel pour déposer ce qui pèse, mettre des mots sur ce qu’ils traversent, mieux comprendre ce qui se joue et construire des repères plus stables ainsi que des stratégies d’apaisement au quotidien. Elles permettent d’aborder ce qui les questionne ou les fragilise :
+		  <li>Usages des écrans et des réseaux sociaux</li>
+			<li>Pression scolaire et organisation du travail</li>
+			<li>Harcèlement et violences psychologiques</li>
+			<li>Questionnements identitaires (image de soi, place dans le groupe, orientation…)</li>
+		</p>
+          <p class="muted" style="margin-top:1rem">      Dans cet espace, nous co‑construisons des repères plus sécurisants et des outils concrets pour faire face aux situations du quotidien. Lorsque cela est utile, le travail peut aussi s’articuler avec la famille, afin de soutenir l’adolescent dans son environnement.&nbsp;</p>
+		</article>
+        </div>
+        <aside class="quote reveal sticky">
+          <p>Recevoir un adolescent, c’est lui offrir un lieu où il peut être entendu sans être résumé à son symptôme.</p>
+			<br><br>
+		  <p>Quand les repères bougent à l’adolescence, le plus précieux est de ne pas avoir à porter tout cela seul.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="tarifs">
+      <div class="container">
+        <span class="eyebrow">Tarifs et horaires</span>
+        <h2 class="section-title">Informations pratiques</h2>
+        <div class="pricing-grid">
+          <article class="pricing-card featured reveal">
+            <h3>Consultations</h3>
+            <div class="price">Tarifs</div>
+            <ul>
+              <li>Première consultation en cabinet:&nbsp; 65€.</li>
+              <li>Consultation de suivi en cabinet : 65€.</li>
+              <li>Consultation à domicile (limite de 6km autour du cabinet) : 85€</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>&nbsp;Horaires d'ouverture</h3>
+            <div class="price">&nbsp;Au cabinet&nbsp;&nbsp;</div>
+            <ul>
+              <li>Mardi : 09h00 - 13h00, 14h00 - 19h00</li>
+              <li>Vendredi : 09h00 - 13h00, 14h00 - 19h00</li>
+              <li>Samedi : 09h30 - 15h00</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>Autres informations&nbsp</h3>
+            <div class="price">Accessibilité</div>
+            <ul>
+              <li>Rez de chaussée</li>
+              <li>Accès PMR </li>
+			  <li>Parking PMR</li>
+              <li>Air conditionné</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>&nbsp;Moyens de paiement</h3>
+            <ul>
+              <li>Espèces ou chèque acceptés, règlement le jour même.</li>
+              <li>La CSS, anciennement CMU, n'est pas acceptée.</li>
+              <li>Une facture numérique peut vous être transmise pour un remboursement auprès de votre mutuelle.</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>&nbsp;Retards et annulation</h3>
+            <ul>
+              <li>En cas de retard, la séance ne pourra pas être prolongée au-delà du créneau prévu.</li>
+              <li>Toute annulation doit être effectuée au moins 24h à l'avance via Doctolib ou par téléphone.</li>
+              <li>Je ne peux pas répondre à toutes les demandes par SMS ou appels en raison de leur nombre important.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+	
+    </section>
+
+
+    <section class="section" id="cabinet">
+      <div class="container">
+        <span class="eyebrow">Le cabinet</span>
+        <h2 class="section-title">Au sein du cabinet Pasteur</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-card large reveal">
+            <img src=".\689008348_10237271495678335_2602157178355143631_n.jpg" alt="Vue intérieure du cabinet avec mur terracotta, bureau en bois et fauteuils" width="768" height="1024" loading="lazy" />
+            <figcaption class="gallery-caption">Le futur cabinet de consultation : chaleureux, lumineux et pensé pour une relation thérapeutique apaisée.</figcaption>
+          </figure>
+          <figure class="gallery-card medium reveal">
+            <img src=".\697119894_10237271495798338_268513682559800529_n.jpg" alt="Autre vue du cabinet avec fenêtre, fauteuil et espace dégagé" width="768" height="1024" loading="lazy" />
+            <figcaption class="gallery-caption">Une pièce sobre qui laisse place à l’écoute et à la présence.</figcaption>
+          </figure>
+          <figure class="gallery-card medium reveal">
+            <img src=".\698253521_10237271495718336_3544264209629631837_n.jpg" alt="Bureau de consultation avec mur coloré et mobilier contemporain" width="768" height="1024" loading="lazy" />
+            <figcaption class="gallery-caption">Charte graphique directement inspirée des tonalités du lieu.</figcaption>
+          </figure>
+		  <div class="pricing-card reveal" style="grid-column: 2 / 4; margin-top: var(--space-4);"><p class="muted" style="margin: 0; max-width: none;">Le bureau de consultation, pensé autour de tonalités terracotta et de matériaux chaleureux, offre un espace apaisé où la relation thérapeutique peut se déployer dans la confidentialité et la sérénité.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="environnement">
+      <div class="container">
+        <span class="eyebrow">Environnement</span>
+        <h2 class="section-title">Le cabinet Pasteur est un centre de soin&nbsp;multi-disciplinaire.</h2>
+        <div class="environment-grid">
+          <article class="environment-card reveal">
+            <img src=".\entree.jpg" alt="Vue extérieure du bâtiment de soins avec jardin et accès" width="1216" height="768" loading="lazy" />
+            <div>
+              <strong>Le cabinet d’Herblay-sur-Seine</strong>
+              <p class="muted">Situé au 1 rue Pasteur, au cœur d’Herblay-sur-Seine, le cabinet bénéficie d’un environnement calme, à proximité immédiate du centre‑ville et de la gare. Un parking dédié facilite l’accès pour les patients comme pour les praticiens, dans un quartier vivant mais préservé du bruit. Ce cadre permet d’arriver sereinement au rendez‑vous et de repartir dans le même esprit, en gardant le temps de la consultation comme une parenthèse protégée.</p>
+            </div>
+          </article>
+          <article class="environment-card reveal">
+            <img src=".\696673855_10237271496918366_2255292302621212096_n.jpg" alt="Vue aérienne du bâtiment et des accès extérieurs" width="1024" height="768" loading="lazy" />
+            <div>
+              <strong>Un lieu accessible, chaleureux et fonctionnel</strong>
+              <p class="muted">Construit en 2017, le cabinet est en parfait état et entièrement accessible aux personnes à mobilité réduite (PMR).</p>
+              <p class="muted">Le cabinet comprend :&nbsp;</p>
+              <p class="muted">• Une salle d’attente commune</p>
+              <p class="muted">• Des sanitaires&nbsp;</p>
+			  <p class="muted">• Des salles climatisées&nbsp;</p>
+              <p class="muted">&nbsp;</p>
+            </div>
+          </article>
+          <article class="environment-card reveal">
+            <img src=".\696761370_10237271495758337_6875572185847028363_n.jpg" alt="Salle d’attente du centre" width="1152" height="768" loading="lazy" />
+            <div>
+              <strong>La salle d’attente</strong>
+              <p class="muted">Avant la consultation, vous êtes accueilli(e) dans une salle d’attente calme et agréable . Cet espace a été conçu pour offrir un premier temps de pause, dans un cadre apaisant et confortable.</p>
+            </div>
+          </article>
+          <article class="environment-card reveal">
+            <img src=".\689008351_10237271496558357_2374388326933353961_n.jpg" alt="Salle d’exercice du centre pluridisciplinaire" width="1152" height="768" loading="lazy" />
+            <div>
+              <strong>Un espace de soins pluridisciplinaire</strong>
+              <p class="muted">Le cabinet accueille plusieurs professionnels de santé et du bien‑être : ostéopathe, kinésithérapeute, réflexologue et psychologue. Cette dynamique pluridisciplinaire favorise le partage d’expériences entre praticiens et une vision globale de la santé, physique et psychique. Les patients bénéficient ainsi d’un environnement où les compétences se complètent, dans une ambiance conviviale, respectueuse et professionnelle.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container cta-wrap reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title" style="margin-top:1rem">Prise de rendez-vous via Doctolib&nbsp; &nbsp;</h2>
+          <p> Prendre soin de soi n’est pas un luxe, c’est le premier pas pour aller mieux. Se donner un espace d'écoute et être accompagné dans un cadre thérapeutique, c’est déjà commencer à transformer ce qui fait souffrir.</p>
+          <p>Il n'est jamais trop tôt, ni trop tard, pour mettre des mots sur ce que l'on traverse et commencer à aller mieux.&nbsp;</p>
+<div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:vlecocq.psy@gmail.com">Écrire par e-mail</a>
+          <a class="btn btn-secondary" href="tel:+33669008660">Appeler</a>
+		  <a class="btn btn-secondary" href="https://www.kine-pasteur.com">Cabinet Pasteur</a>
+		  <a class="btn btn-secondary" href="https://annuaire.esante.gouv.fr/pp/detail/10008914185?exeProId=5869636">Agence du Numérique en Santé</a>
+          </div>
+        </div>
+        <div class="panel" style="background:color-mix(in srgb,var(--color-surface-2) 72%,transparent)">
+          <h3>Coordonnées</h3>
+          <ul class="contact-list">
+            <li><span>Nom</span><strong>Vanessa Lecocq</strong></li>
+            <li><span>Téléphone</span><strong>06 69 00 86 60</strong></li>
+            <li><span>E-mail</span><strong>vlecocq.psy@gmail.com</strong></li>
+			<li><span>Adresse</span><strong>1 Rue Pasteur, 95220 Herblay-sur-Seine</strong></li>
+			<li><span>Numéro RPPS</span><strong>10008914185</strong></li>
+            <li><span>Numéro ADELI</span><strong>959310053</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+<section class="section access-map-section" aria-labelledby="acces-cabinet">
+  <div class="container">
+    <div class="access-map-card reveal">
+      <div class="map-title p-4">
+        <span class="eyebrow">Accès</span>
+        <h3 id="acces-cabinet">Conditions d’accès</h3>
+        <p>
+          Le cabinet est situé au 1 rue Pasteur, 95220 Herblay-sur-Seine. Le plan ci-dessous
+          permet de visualiser facilement l’emplacement, de zoomer et de vous déplacer sur la
+          carte pour préparer votre venue.
+        </p>
+      </div>
+      <div id="plan" class="map-frame-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=1+Rue+Pasteur,+95220+Herblay-sur-Seine&z=17&output=embed"
+          title="Plan d'accès au cabinet de Vanessa Lecocq"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="map-actions">
+        <a class="btn btn-primary" href="https://www.google.com/maps/place/1+Rue+Pasteur,+95220+Herblay-sur-Seine/@48.994111,2.1636477,17z" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+	
+	
+  <footer class="footer">
+    <div class="container">Copyright : Vanessa Lecocq</div>
+  </footer>
+
+  <script>
+    (function(){
+      const root=document.documentElement;
+      const toggle=document.querySelector('[data-theme-toggle]');
+      let theme='light';
+      const renderIcon=(mode)=>{
+        toggle.innerHTML=mode==='dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      };
+      root.setAttribute('data-theme', theme);
+      renderIcon(theme);
+      toggle.addEventListener('click', ()=>{ theme=theme==='dark'?'light':'dark'; root.setAttribute('data-theme', theme); renderIcon(theme); });
+      const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}})},{threshold:.14});
+      document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
